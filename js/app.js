@@ -34,9 +34,9 @@ function convertTemp() {
         let kelvin = parseFloat(( input - 32) / 1.8 ) + 273.15;
         let kelvinans = Math.round(kelvin * 100) / 100;
 
-        centigraderesult.innerHTML = centigradeans;
-        fahrenheitresult.innerHTML = fahrenheitans;
-        kelvinresult.innerHTML = kelvinans;
+        centigraderesult.innerHTML = `${centigradeans} °c`;
+        fahrenheitresult.innerHTML = `${fahrenheitans} °f`;
+        kelvinresult.innerHTML = `${kelvinans} k`;
     } else if (type == "centigrade") {
         let centigradeans = (input);
         let fahrenheit = parseFloat(input * 1.8) + 32;
@@ -44,9 +44,9 @@ function convertTemp() {
         let kelvin = parseFloat(input) + 273.15
         let kelvinans = Math.round(kelvin * 100) / 100;
 
-        centigraderesult.innerHTML = centigradeans;
-        fahrenheitresult.innerHTML = fahrenheitans;
-        kelvinresult.innerHTML = kelvinans;
+        centigraderesult.innerHTML = `${centigradeans} °c`;
+        fahrenheitresult.innerHTML = `${fahrenheitans} °f`;
+        kelvinresult.innerHTML = `${kelvinans} k`;
     } else if (type == "kelvin") {
         let centigrade = parseFloat(input) - 273.15;
         let centigradeans = Math.round(centigrade * 100) / 100;
@@ -54,8 +54,8 @@ function convertTemp() {
         let fahrenheitans = Math.round(fahrenheit * 100) / 100;
         let kelvinans = (input);
 
-        centigraderesult.innerHTML = centigradeans;
-        fahrenheitresult.innerHTML = fahrenheitans;
-        kelvinresult.innerHTML = kelvinans;
+        centigraderesult.innerHTML = `${centigradeans} °c`;
+        fahrenheitresult.innerHTML = `${fahrenheitans} °f`;
+        kelvinresult.innerHTML = `${kelvinans} k`;
     }
 }
