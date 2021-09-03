@@ -34,7 +34,7 @@ body {
         background: #fff;
         width: 536px;
         height: 250px;
-        padding: 8px;
+        padding: 20px;
         border-radius: 2px;
         box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
         display: grid;
@@ -110,7 +110,6 @@ body {
                 color: #aaaaaa;
                 font-size: 14px;
             }
-            //temp-input-tab
             .tab {
                 overflow: hidden;
                 margin-top: 4px;
@@ -129,7 +128,6 @@ body {
                     font-size: 14px;
                     color: #333333;
                     cursor: pointer;
-                    transition: background-color .3s;
                 }
                 .active {
                     background-color: #fff;
@@ -143,7 +141,6 @@ body {
     @media screen and (max-width: 580px) {
         .converter-content {
             width: 100%;
-            // color: #3c384b;
         }
     }
 }

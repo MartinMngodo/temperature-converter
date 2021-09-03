@@ -42,7 +42,7 @@ body {
   background: #fff;
   width: 536px;
   height: 250px;
-  padding: 8px;
+  padding: 20px;
   border-radius: 2px;
   -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
@@ -172,8 +172,6 @@ body {
   font-size: 14px;
   color: #333333;
   cursor: pointer;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
 }
 
 .converter-section .converter-content .temp-input .tab .active {
