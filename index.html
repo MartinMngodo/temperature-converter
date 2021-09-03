@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+</head>
+<body>
+    <main>
+        <div class="converter-section">
+            <div class="container">
+                <div class="converter-content">
+                    <!-- tempdisplay -->
+                    <div id="Centigrade" class="tabcontent">
+                        <h3 id="centigraderesult">0</h3>
+                    </div>
+                    <div id="Fahrenheit" class="tabcontent">
+                        <h3 id="fahrenheitresult">0</h3>
+                    </div>
+                    <div id="Kelvin" class="tabcontent">
+                        <h3 id="kelvinresult">0</h3>
+                    </div>
+                    <div class="temp-input">
+                        <div class="temp-input-fields">
+                            <div class="temp-input-field">
+                                <label for="degrees">Degrees:</label><br>
+                                <input type="text" id="degrees" name="degrees" placeholder="0">
+                            </div>
+                            <div class="temp-input-field">
+                                <label for="temp-type">Type:</label><br>
+                                <select id="temp-type" name="type">
+                                    <option value="fahrenheit" selected>Fahrenheit</option>
+                                    <option value="centigrade">Centigrade</option>
+                                    <option value="kelvin">Kelvin</option>
+                                </select>
+                            </div>
+                            <div class="temp-input-field">
+                                <!-- <button class="temp-submit">Submit</button> -->
+                                <input type="submit" value="Submit" onclick="convertTemp()">
+                            </div>
+                        </div>
+                        <p id="conversion-info"><!--Fahrenheit - to - Centigrade -->Convert to:</p>
+                        <div class="tab">
+                            <button class="tablinks" onclick="openTemp(event, 'Centigrade')" id="defaultOpen">Centigrade</button>
+                            <button class="tablinks" onclick="openTemp(event, 'Fahrenheit')">Fahrenheit</button>
+                            <button class="tablinks" onclick="openTemp(event, 'Kelvin')">Kelvin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

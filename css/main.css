@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #fcfcfc;
+}
+
+.container {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+@media screen and (max-width: 580px) {
+  .container {
+    padding: 0 .5rem;
+  }
+}
+
+.converter-section {
+  min-height: 100vh;
+  background: #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.converter-section .converter-content {
+  background: #fff;
+  width: 536px;
+  height: 250px;
+  padding: 8px;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.converter-section .converter-content .tabcontent {
+  display: none;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  margin: auto 0;
+}
+
+.converter-section .converter-content .tabcontent h3 {
+  font-size: 2rem;
+  color: #3C384B;
+}
+
+.converter-section .converter-content .temp-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.converter-section .converter-content .temp-input .temp-input-fields {
+  padding: 4px 4px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  text-align: left;
+}
+
+.converter-section .converter-content .temp-input .temp-input-fields .temp-input-field {
+  width: auto;
+  position: relative;
+}
+
+.converter-section .converter-content .temp-input .temp-input-fields .temp-input-field label {
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+.converter-section .converter-content .temp-input .temp-input-fields .temp-input-field input[type=text], .converter-section .converter-content .temp-input .temp-input-fields .temp-input-field select {
+  color: #333;
+  margin-top: 10px;
+  width: 100%;
+  padding: 4px 8px;
+  height: 32px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  position: relative;
+  bottom: 0;
+  -webkit-box-shadow: 1px 1px 2px rgba(51, 51, 51, 0.35);
+          box-shadow: 1px 1px 2px rgba(51, 51, 51, 0.35);
+}
+
+.converter-section .converter-content .temp-input .temp-input-fields .temp-input-field input[type=text]:focus {
+  border-radius: 0;
+}
+
+.converter-section .converter-content .temp-input .temp-input-fields .temp-input-field input[type=submit] {
+  width: 100%;
+  padding: 4px 4px;
+  height: 32px;
+  background-color: #3C384B;
+  color: #fff;
+  display: inline-block;
+  border: 1px solid #3C384B;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 2px rgba(51, 51, 51, 0.35);
+          box-shadow: 1px 1px 2px rgba(51, 51, 51, 0.35);
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.converter-section .converter-content .temp-input .temp-input-fields .temp-input-field input[type=submit]:hover {
+  background-color: #2f2b3b;
+}
+
+.converter-section .converter-content .temp-input #conversion-info {
+  text-align: left;
+  margin-top: 16px;
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+.converter-section .converter-content .temp-input .tab {
+  overflow: hidden;
+  margin-top: 4px;
+  background-color: #f5f5f5;
+  padding: 4px 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+.converter-section .converter-content .temp-input .tab .tablinks {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  height: 32px;
+  font-size: 14px;
+  color: #333333;
+  cursor: pointer;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.converter-section .converter-content .temp-input .tab .active {
+  background-color: #fff;
+  color: #3C384B;
+  -webkit-box-shadow: 1px 1px 2px rgba(51, 51, 51, 0.35);
+          box-shadow: 1px 1px 2px rgba(51, 51, 51, 0.35);
+  border-radius: 1px;
+}
+
+@media screen and (max-width: 580px) {
+  .converter-section .converter-content {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
